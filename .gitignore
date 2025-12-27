@@ -1,0 +1,44 @@
+# --- Python Core ---
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- Environment & Secrets ---
+.env
+.venv
+venv/
+ENV/
+env/
+
+# --- Django ---
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+media/
+staticfiles/
+
+# --- Testing & Quality ---
+.coverage
+htmlcov/
+.pytest_cache/
+.mypy_cache/
+.flake8
+
+# --- Machine Learning & Data ---
+data/*.csv
+data/*.json
+!data/sample_data.json
+mlops/models/*.joblib
+mlops/models/*.pkl
+
+# --- Project Outputs (Noise) ---
+backtest_report.json
+backtest_report.html
+plot_script.py
+checklist.md
+apps/analytics/res_*.json
+
+# --- Specific Artifacts from your logs ---
+backtest_sweep_results_*/
+
