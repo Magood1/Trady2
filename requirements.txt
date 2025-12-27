@@ -1,0 +1,46 @@
+# Core Frameworks
+Django==5.0.6
+djangorestframework==3.15.1
+psycopg2-binary==2.9.9
+redis==5.0.4
+celery==5.4.0
+django-celery-beat==2.6.0
+django-filter==24.2
+fbm==0.2.0
+
+
+# Data & Quant
+pandas==2.2.2
+numpy==1.26.4
+MetaTrader5==5.0.45
+hurst==0.0.5
+scikit-learn==1.5.0  # New
+lightgbm==4.3.0       # New
+joblib==1.4.2         # New
+plotly==5.22.0        # New
+ta==0.10.2  # <-- مكتبة جديدة للمؤشرات الفنية
+optuna==3.5.0
+
+
+# Configuration & Utilities
+python-dotenv==1.0.1
+pydantic-settings==2.2.1
+structlog==24.1.0
+loguru==0.7.2
+tenacity==8.2.3
+PyYAML==6.0.1         # New
+
+
+# Development & Testing
+pytest==8.2.0
+pytest-django==4.8.0
+pytest-cov==5.0.0
+factory-boy==3.3.0
+flake8==7.0.0
+black==24.4.2
+isort==5.13.2
+mypy==1.10.0
+pre-commit==3.7.0
+django-stubs[compatible-mypy]==5.0.2
+
+

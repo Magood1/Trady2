@@ -1,0 +1,22 @@
+[tool.black]
+line-length = 99
+target-version = ['py311']
+
+[tool.isort]
+profile = "black"
+line_length = 99
+known_first_party = ["project_trady2", "apps"]
+
+[tool.mypy]
+python_version = "3.11"
+plugins = ["mypy_django_plugin.main"]
+strict = true
+exclude = "migrations"
+
+[tool.django_stubs]
+django_settings_module = "project_trady2.settings"
+
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "project_trady2.settings"
+python_files = "test_*.py"
+addopts = "--cov=apps --cov-report=term-missing --no-cov-on-fail"

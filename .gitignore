@@ -1,0 +1,51 @@
+# --- Python Core ---
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- Environment & Secrets (CRITICAL) ---
+.env
+.venv
+venv/
+ENV/
+env/
+
+# --- Django ---
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+media/
+staticfiles/
+
+# --- Testing & Quality ---
+.coverage
+htmlcov/
+.pytest_cache/
+.mypy_cache/
+.flake8
+
+# --- Machine Learning & Data (Keep Repo Light) ---
+# Ignore large datasets
+data/*.csv
+data/*.json
+# Keep sample data if small (Optional: Remove the ! line to ignore all)
+!data/sample_data.json
+
+# Ignore trained models binaries (Too large for standard Git)
+# Use Git LFS if you really need to track them, otherwise ignore.
+mlops/models/*.joblib
+mlops/models/*.pkl
+
+# --- IDEs (Personal Preferences) ---
+.vscode/
+.idea/
+*.swp
+
+# --- Project Specific Outputs ---
+backtest_report.json
+plot_script.py
+checklist.md
+# Any temp json results
+apps/analytics/res_*.json
+

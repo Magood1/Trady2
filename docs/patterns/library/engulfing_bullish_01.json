@@ -1,0 +1,9 @@
+{
+    "name": "engulfing_bullish_ideal_01",
+    "type": "ENGULFING_BULLISH",
+    "length": 2,
+    "data": [
+        {"open": 0.5, "high": 0.6, "low": 0.0, "close": 0.1},
+        {"open": 0.05, "high": 1.0, "low": -0.1, "close": 0.9}
+    ]
+}
